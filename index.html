@@ -1,82 +1,209 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Lukas Wolf</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lukas Wolf</title>
+    <meta name="description" content="Co-founder & CEO at Sonia Health. ML researcher at the intersection of language, cognition, and mental health. ETH Zurich, MIT, Y Combinator.">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="./images/Me.JPG" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Lukas Wolf</strong>.</h1>
-							</header>
-							<p>I am a co-founder at  <a
-							href="https://www.soniahealth.com/">Sonia</a>. I do
-							research in Machine Learning and applications in psychology, cognitive science, and linguistics. Beyond that I love
-							sports, cooking, arts, and everything
-							involving human or artificial intelligence.
-								</p>
-						</div>
-					</div>
-				</div>
-			</article>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lukas Wolf">
+    <meta property="og:description" content="Co-founder & CEO at Sonia. ML researcher. ETH &rarr; MIT &rarr; SF.">
+    <meta property="og:image" content="https://lu-wo.github.io/images/hero.jpg">
+    <meta property="og:url" content="https://lu-wo.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lukaswolf_">
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Reach out for collaborations!</h2>
-						<p>Lukas Wolf</p>
-						<p>San Francisco, United States</p>
-					</header>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://www.linkedin.com/in/lukas-wolf-14a992143/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/lu-wo" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://scholar.google.ch/citations?user=_FvMBFIAAAAJ&hl=de" class="icon brands fab fa-google"><span class="label">Google Scholar</span></a></li>
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Lukas Wolf.</li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:opsz,wght@14..32,300..500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-	</body>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner container--wide">
+        <a href="index.html" class="nav__name">Lukas Wolf</a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#sonia">Sonia</a></li>
+          <li><a href="research.html" class="nav__link--accent">Research</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="main">
+
+      <!-- Hero -->
+      <section id="hero" class="section section--hero">
+        <div class="container hero">
+          <div class="hero__photo-wrapper fade-in-up" data-parallax="0.12">
+            <img
+              src="images/hero.jpg"
+              alt="Lukas Wolf on a rooftop overlooking the ocean"
+              class="hero__photo"
+              width="1086"
+              height="724"
+              loading="eager"
+              fetchpriority="high"
+            >
+          </div>
+          <h1 class="hero__name font-serif fade-in-up">Lukas Wolf</h1>
+          <p class="hero__tagline fade-in-up" id="tagline" data-text="Co-founder &amp; CEO at Sonia. ML researcher. ETH &rarr; MIT &rarr; SF."></p>
+          <div class="hero__social fade-in-up">
+            <a href="https://github.com/lu-wo" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://scholar.google.ch/citations?user=_FvMBFIAAAAJ&hl=de" class="social-link" aria-label="Google Scholar" target="_blank" rel="noopener">
+              <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lukas-wolf-14a992143/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/lukaswolf_" class="social-link" aria-label="X / Twitter" target="_blank" rel="noopener">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container--wide about">
+          <div class="about__photo-col fade-in-up">
+            <img
+              src="images/about.jpg"
+              alt="Lukas Wolf"
+              class="about__photo"
+              width="800"
+              height="800"
+              loading="lazy"
+            >
+          </div>
+          <div class="about__text fade-in-up">
+            <h2 class="font-serif">About</h2>
+            <p>I studied computer science at ETH Zurich and got into machine learning through neuroscience, training models to decode brain signals from EEG data. I then spent time at MIT working on psycholinguistics and language modeling, trying to understand how prosody and text carry meaning together.</p>
+            <p>In my private life, a paradox I noticed is that everyone talks about therapy but almost nobody actually goes. After my own experience struggling to find support, I started playing around with GPT-2 and GPT-3 to see if AI could help. That became <a href="https://www.soniahealth.com/">Sonia</a>.</p>
+            <p>I'm now the co-founder and CEO at Sonia. We went through Y Combinator and are based in San Francisco. I still do research, mostly on AI safety and crisis detection in mental health.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sonia -->
+      <section id="sonia" class="section section--dark">
+        <div class="container">
+          <h2 class="font-serif fade-in-up">Sonia</h2>
+          <div class="sonia-card fade-in-up">
+            <p class="sonia-card__tagline">An operating system for your inner life.</p>
+            <p class="sonia-card__description">Sonia is voice-first AI for mental health support and personal growth. We built it because everyone deserves access to support&mdash;not just those who can afford it or navigate a months-long waitlist. Think of it as an operating system to navigate your personal life and figure things out.</p>
+            <div class="sonia-card__links">
+              <a href="https://www.soniahealth.com/" class="btn btn--primary" target="_blank" rel="noopener">Learn more</a>
+              <a href="https://apps.apple.com/us/app/sonia-ai-emotional-support/id6472111765" class="btn btn--ghost" target="_blank" rel="noopener">
+                <i class="fa-brands fa-apple" aria-hidden="true"></i> App Store
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Work -->
+      <section id="work" class="section">
+        <div class="container">
+          <h2 class="font-serif fade-in-up">Selected Work</h2>
+          <div class="publications">
+
+            <article class="pub-card fade-in-up">
+              <h3 class="pub-card__title">EEGEyeNet: a simultaneous electroencephalography and eye-tracking dataset and benchmark for eye movement prediction</h3>
+              <div class="pub-card__meta">
+                <span class="tag">NeurIPS 2021</span>
+              </div>
+              <p class="pub-card__authors">Kastrati, Plomecka, Pascual, <strong>Wolf</strong>, Gillioz, Wattenhofer, Langer</p>
+              <div class="pub-card__links">
+                <a href="https://arxiv.org/abs/2111.05100" class="link--animated" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/ardkastrati/EEGEyeNet" class="link--animated" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+
+            <article class="pub-card fade-in-up">
+              <h3 class="pub-card__title">A deep learning approach for the segmentation of electroencephalography data in eye tracking applications</h3>
+              <div class="pub-card__meta">
+                <span class="tag">ICML 2022</span>
+              </div>
+              <p class="pub-card__authors"><strong>Wolf</strong>, Kastrati, Plomecka, Li, Klebe, Veicht, Wattenhofer, Langer</p>
+              <div class="pub-card__links">
+                <a href="https://arxiv.org/abs/2206.08672" class="link--animated" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/lu-wo/DETRtime" class="link--animated" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+
+            <article class="pub-card fade-in-up">
+              <h3 class="pub-card__title">Quantifying the redundancy between prosody and text</h3>
+              <div class="pub-card__meta">
+                <span class="tag">EMNLP 2023</span>
+              </div>
+              <p class="pub-card__authors"><strong>Wolf</strong>, Pimentel, Fedorenko, Cotterell, Warstadt, Wilcox, Regev</p>
+              <div class="pub-card__links">
+                <a href="https://arxiv.org/abs/2311.17233" class="link--animated" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/lu-wo/quantifying-redundancy" class="link--animated" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+
+            <article class="pub-card fade-in-up">
+              <h3 class="pub-card__title">FABRIC: Personalizing diffusion models with iterative feedback</h3>
+              <div class="pub-card__meta">
+                <span class="tag">ECCV 2024</span>
+              </div>
+              <p class="pub-card__authors">Von R&uuml;tte, Fedele, Thomm, <strong>Wolf</strong></p>
+              <div class="pub-card__links">
+                <a href="https://arxiv.org/abs/2307.10159" class="link--animated" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/sd-fabric/fabric" class="link--animated" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+
+          </div>
+          <a href="research.html" class="link--arrow fade-in-up">View all publications &rarr;</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social">
+          <a href="https://github.com/lu-wo" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://scholar.google.ch/citations?user=_FvMBFIAAAAJ&hl=de" class="social-link" aria-label="Google Scholar" target="_blank" rel="noopener">
+            <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lukas-wolf-14a992143/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/lukaswolf_" class="social-link" aria-label="X / Twitter" target="_blank" rel="noopener">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p class="footer__location font-mono">San Francisco, CA</p>
+        <p class="footer__copyright">&copy; 2026 Lukas Wolf</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
