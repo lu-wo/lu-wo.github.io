@@ -873,19 +873,21 @@ a:focus-visible {
   }
 
   .nav__links {
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 260px;
+    left: 0;
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 80px var(--space-xl) var(--space-xl);
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
     background: var(--color-surface);
-    box-shadow: var(--shadow-elevated);
     transform: translateX(100%);
     transition: transform var(--transition-slow);
-    gap: var(--space-lg);
+    gap: var(--space-xl);
     z-index: 1000;
   }
 
@@ -894,7 +896,11 @@ a:focus-visible {
   }
 
   .nav__links a {
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .nav__links li {
+    width: auto;
   }
 
   /* Hero mobile */
